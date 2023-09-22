@@ -1,0 +1,10 @@
+.container--errors-prototypes-this{
+  font-family: 'Chilanka', sans-serif;
+  height: 500px;
+}
+
+.container--errors-prototypes-this p{
+  background-color: red;
+  margin: 40px 0px 0px 0px;
+  overflow: auto;
+}
