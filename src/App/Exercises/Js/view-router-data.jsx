@@ -34,6 +34,8 @@ import { blockRouterMetaData as blockRouterMetaDataPromisesAndMe } from './Promi
 
 import { blockRouterMetaData as blockRouterMetaDataUseEffectAndPromiseExercise } from './UseEffectAndPromiseExercise/router-data';
 
+import { blockRouterMetaData as blockRouterMetaDataAsyncAwait } from './AsyncAwait/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -53,5 +55,6 @@ export const blockRouterMetaData = [
   blockRouterMetaDataSavedInput,
   blockRouterMetaDataPromisesAndMe,
   blockRouterMetaDataUseEffectAndPromiseExercise,
+  blockRouterMetaDataAsyncAwait,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
