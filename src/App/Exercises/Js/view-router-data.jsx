@@ -30,6 +30,10 @@ import { blockRouterMetaData as blockRouterMetaDataJsonXMLStorage } from './Json
 
 import { blockRouterMetaData as blockRouterMetaDataSavedInput } from './SavedInput/router-data';
 
+import { blockRouterMetaData as blockRouterMetaDataPromisesAndMe } from './PromisesAndMe/router-data';
+
+import { blockRouterMetaData as blockRouterMetaDataUseEffectAndPromiseExercise } from './UseEffectAndPromiseExercise/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -47,5 +51,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataOOPexercises,
   blockRouterMetaDataJsonXMLStorage,
   blockRouterMetaDataSavedInput,
+  blockRouterMetaDataPromisesAndMe,
+  blockRouterMetaDataUseEffectAndPromiseExercise,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
