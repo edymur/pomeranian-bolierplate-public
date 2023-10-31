@@ -48,7 +48,7 @@ export const Blok22Warmup = () => {
     zosia: 13,
   };
 
-  const wynik3 = imionaWagi(['Janek', 'Zosia'], wagi);
+  const wynik3 = imionaWagi(['Janek', 'Zosia'], wagi1);
   console.log(wynik3); // [{name: "Janek", score: 20}, {name: "Zosia", score: 13}]
 
   return (

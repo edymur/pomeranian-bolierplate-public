@@ -1,120 +1,96 @@
-import { ExerciseArraysTraining } from './ArraysTraining';
-
+import { ArraysTraining } from './ArraysTraining';
 import './styles.css';
 
-export function ExerciseJsComplexTypes() {
+export function ComplexTypesInJs() {
   const personalData = {
     age: 60,
-    name: 'Maciej',
-    surname: 'Dojlido',
+    name: 'Maciek',
+    surname: 'Nowak',
   };
 
   const data = [
-    'random text', // String
-    42, // Number
-    true, // Boolean
+    'text', // string
+    42, // number
+    true, // boolean
     {
-      // Obiekt
-      keyOfObject: 'value',
+      keyOfObject: 'value', // object
     },
     [1, 2, 3], // array of arrays
   ];
 
-  const arrayOfArrys = [
+  const arrayOfArrays = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9],
   ];
 
-  const arraysOfObjects = [
-    {
-      name: 'Krzysztof',
-    },
-    {
-      name: 'Maciej',
-    },
-    {
-      name: 'Oleg',
-    },
-  ];
+  const arrayOfString = ['audi', 'mercedes', 'tesla', 'bmw'];
 
-  const arrayOfStrings = ['audi', 'mercedes', 'tesla', 'bmw'];
+  const [first, ...rest] = arrayOfString;
 
-  const [first, second, third, ...theRestOne] = arrayOfStrings; // destrukturyzacja tablicy
+  const { age, name } = personalData;
 
-  const { surname, name, age } = personalData; // destrukturyzacja obiektu
+  console.log(rest);
 
-  function getTemplate() {
-    return `Dsafsdfkdslfdsf arrayOfStrings ${surname}`; // template string
-  }
+  const someArray = ['asdasd', 'dddddd', 'ssssss'];
+  console.log([...someArray, 1]);
 
-  const personalData2 = ['Maciej', 'Dojlido', 65];
-  const accountValue = [12313];
-  const newArray = [...accountValue, ...personalData2];
+  // const arrayOfObjects = [
+  //   { name: 'Krzysztof' },
+  //   { name: 'Oleg' },
+  //   { name: 'Anna' },
+  // ];
 
-  //Spread operator to merge array:
-  console.log('newArray', newArray);
+  // Concat function example
+  const concatResult = arrayOfString.concat(someArray);
 
-  //Concat function example:
-  const concatResult = accountValue.concat(personalData2);
-  console.log('concatResult', concatResult);
-
+  // Loops
   function forLoop() {
-    // incrementation/ dodawanie
-    for (let counter = 0; counter <= 5; counter++) {
-      console.log('for loop: ', counter);
+    for (let counter = 0; counter < 5; counter++) {
+      console.log('For loop:', counter);
     }
   }
 
   const whileLoop = () => {
-    let counter = 0;
+    let number = 0;
 
-    while (counter < 5) {
-      console.log(counter);
-      counter++;
+    while (number < 5) {
+      console.log('While loop:', number);
+      number++;
     }
   };
 
-  //infinity loop
-  //  while (true) {
-  //   console.log(123213);
-  //   }
+  // Infinity loop
+  // while(true) {
+  //   console.log(123123);
+  // }
 
   return (
     <div className="container--exercise-js-complex-types">
       Tekst: {data[0]} <br />
-      Property obiektu: {data[3].keyOfObject}
+      Property obiektu: {data[3].keyOfObject} <br />
+      Element tablicy tablic: {data[4][2]} <br />
       <br />
-      Element tablicy tablic: {data[4][2]}
+      Core function (build in function pop()): {arrayOfArrays[0].pop()} <br />
+      Core function (build in function shift()): {arrayOfArrays[0].shift()}
       <br />
-      Core function (build in function pop( )): {arrayOfArrys[0].pop()}
+      Destructuring of array: {`${first} - ${rest}`} <br />
+      Destructuring of object: {`${name} - ${age}`} <br />
       <br />
-      Desctructing of array: {`${first} ${theRestOne}`}
+      Splice example - elementy usunięte: {String([1, 2, 3].splice(1, 2))}
       <br />
-      Desctructing of objects: {`${name} ${age}`}
+      Slice example: {String([1, 2, 3, 4].slice(1, 3))}
       <br />
-      {getTemplate()}
+      Concat example: {concatResult.join(', ')}
       <br />
-      {/* / Usuwa elementy od indekus 1 do 2 / */}
-      Splice example splice(){' '}
-      {console.log(
-        'Splice example - elementy usuniete',
-        arrayOfArrys[1].splice(1, 2)
-      )}
+      Do I have this car? {arrayOfString.indexOf('tesla') !== -1 ? 'Yes' : 'No'}
       <br />
-      {/* // result is 0 (because this element exist in this array)  */}
-      <br />
-      Do I have this car?: {arrayOfStrings.indexOf('tesla')}
-      {/* //result is -1 (because this element does not exist in this array) */}
-      <br />
-      Do I have this car?: {arrayOfStrings.indexOf('maluch')}
-      {/* length example */}
-      <br />
-      Length: {arrayOfStrings.length}
+      Do I have this car?{' '}
+      {arrayOfString.indexOf('polonez') === -1 ? 'No' : 'Yes'} <br />
+      Length: {arrayOfString.length}
       {forLoop()}
       {whileLoop()}
-
-      <ExerciseArraysTraining />
+      <ArraysTraining />
     </div>
   );
 }
