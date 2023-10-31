@@ -19,13 +19,10 @@ export function HtmlCssExercises() {
     <div>
       <p>HTML & CSS - lista ćwiczeń</p>
       <GoBackLink label="Zamknij" />
-
       <hr />
-
       <Routes>
-        <Route path="" element={<ExerciseLinks />} />
+        <Route path="html-css-exercises" element={<ExerciseLinks />} />
       </Routes>
-
       {element}
     </div>
   );
@@ -33,9 +30,7 @@ export function HtmlCssExercises() {
 
 export function HtmlCssExerciseItem() {
   const element = useRoutes(htmlBlockRouterData);
-
   const location = useLocation();
-
   const { pathname } = location;
   // const pathname = location.pathname
 
@@ -47,9 +42,7 @@ export function HtmlCssExerciseItem() {
   return (
     <div className="exercise-item-layout">
       <ExerciseItemHeader data={exerciseRouteData} />
-
       <hr />
-
       <div className="exercise-item-content">{element}</div>
     </div>
   );

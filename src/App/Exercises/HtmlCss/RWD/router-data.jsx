@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { ResponsiveWebDesign } from './index';
 
 export const blockRouterMetaData = {
