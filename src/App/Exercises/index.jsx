@@ -14,15 +14,9 @@ export function Exercises() {
     <Routes>
       <Route path="" element={<BlockLayout />}>
         <Route path="" element={<p>Wybierz kategorie</p>} />
-<<<<<<< HEAD
-        <Route path="html-css/" element={<HtmlCssExercises />} />
-        <Route path="js/" element={<JsExercises />} />
-        <Route path="react/" element={<ReactExercises />} />
-=======
         <Route path="html-css" element={<HtmlCssExercises />} />
         <Route path="js" element={<JsExercises />} />
         <Route path="react" element={<ReactExercises />} />
->>>>>>> master
       </Route>
       <Route path="html-css/*" element={<HtmlCssExerciseItem />} />
       <Route path="js/*" element={<JsExerciseItem />} />
