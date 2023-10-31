@@ -1,9 +1,7 @@
 import React from 'react';
-
 import { Route, Routes, useLocation, useRoutes } from 'react-router-dom';
 
 import { GoBackLink } from '../../Components/GoBack/GoBack';
-
 import { getRouterMetaDataByCurrentPath } from '../../router-data/getRouterMetaDataByCurrentPath';
 
 import { ExerciseItemHeader } from '../ExerciseItemHeader';
@@ -12,7 +10,6 @@ import {
   blockRouterData as htmlBlockRouterData,
   blockRouterMetaData as htmlBlockRouterMetaData,
 } from './view-router-data';
-
 import { ExerciseLinks } from './ExerciseLinks';
 
 export function HtmlCssExercises() {
@@ -21,7 +18,6 @@ export function HtmlCssExercises() {
   return (
     <div>
       <p>HTML & CSS - lista ćwiczeń</p>
-
       <GoBackLink label="Zamknij" />
 
       <hr />
@@ -41,12 +37,10 @@ export function HtmlCssExerciseItem() {
   const location = useLocation();
 
   const { pathname } = location;
-
   // const pathname = location.pathname
 
   const exerciseRouteData = getRouterMetaDataByCurrentPath(
     pathname,
-
     htmlBlockRouterMetaData
   );
 
