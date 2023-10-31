@@ -30,11 +30,7 @@ import { blockRouterMetaData as blockRouterMetaDataTabletennis } from './TableTe
 
 import { blockRouterMetaData as blockRouterMetaDataArray } from './ArrayRenderToTable/router-data';
 
-import { blockRouterMetaData as blockRouterMetaDataFloatsAndPositioningExercises } from './FloatsAndPositioningExercises/router-data';
-
-import { blockRouterMetaData as blockRouterMetaDataFloatsAndPositioning } from './FloatsAndPositioning/router-data';
-
-import { blockRouterMetaData as blockRouterMetaDataRWD } from './RWD/router-data';
+import { blockRouterMetaData as blockRouterMetaDataMenu } from '../../Components/HeaderMenu/router-data';
 
 export const blockRouterMetaData = [
   blockRouterMetaData121220231,
@@ -55,6 +51,7 @@ export const blockRouterMetaData = [
   blockRouterMetaDataFloatsAndPositioningExercises,
   blockRouterMetaDataFloatsAndPositioning,
   blockRouterMetaDataRWD,
+  blockRouterMetaDataMenu,
 ];
 
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
