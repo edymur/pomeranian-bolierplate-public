@@ -18,6 +18,24 @@ import { blockRouterMetaData as blockRouterMetaDataHitTheMoleGame } from './HitT
 
 import { blockRouterMetaData as blockRouterMetaDataMemoGame } from './MemoGame/router-data';
 
+import { blockRouterMetaData as blockRouterMetaErrorPrototypesThis } from './tryCatchAndFinally/router-data';
+
+import { blockRouterMetaData as blockRouterMetaDataJsPrototypes } from './JsPrototypes/router-data';
+
+import { blockRouterMetaData as blockRouterMetaDataOOP } from './OOP/router-data';
+
+import { blockRouterMetaData as blockRouterMetaDataOOPexercises } from './OOPExercises/router-data';
+
+import { blockRouterMetaData as blockRouterMetaDataJsonXMLStorage } from './JsonXMLStorage/router-data';
+
+import { blockRouterMetaData as blockRouterMetaDataSavedInput } from './SavedInput/router-data';
+
+import { blockRouterMetaData as blockRouterMetaDataPromisesAndMe } from './PromisesAndMe/router-data';
+
+import { blockRouterMetaData as blockRouterMetaDataUseEffectAndPromiseExercise } from './UseEffectAndPromiseExercise/router-data';
+
+import { blockRouterMetaData as blockRouterMetaDataAsyncAwait } from './AsyncAwait/router-data';
+
 export const blockRouterMetaData = [
   blockRouterMetaDataJsVariables1,
   blockRouterMetaDataJsVariables2,
@@ -29,5 +47,14 @@ export const blockRouterMetaData = [
   blockRouterMetaDataVanishString,
   blockRouterMetaDataHitTheMoleGame,
   blockRouterMetaDataMemoGame,
+  blockRouterMetaErrorPrototypesThis,
+  blockRouterMetaDataJsPrototypes,
+  blockRouterMetaDataOOP,
+  blockRouterMetaDataOOPexercises,
+  blockRouterMetaDataJsonXMLStorage,
+  blockRouterMetaDataSavedInput,
+  blockRouterMetaDataPromisesAndMe,
+  blockRouterMetaDataUseEffectAndPromiseExercise,
+  blockRouterMetaDataAsyncAwait,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
