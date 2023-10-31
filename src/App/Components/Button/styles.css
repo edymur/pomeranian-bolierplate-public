@@ -1,18 +1,17 @@
 .main-button {
   display: inline-flex;
+  min-width: 10.2rem;
   /* height: 3.5rem; */
-  padding: 0rem 2.25rem;
+  padding: 0 2.25rem;
   justify-content: center;
   /* align-items: center; */
   border-radius: 0.5rem;
-  flex-direction: row;
-  min-width: 10.2rem;
-  color: white;
+  color: #fff;
 
   font-family: 'Poppins', sans-serif;
-  line-height: calc(3.5rem - 2px);
   font-size: 1.125rem;
-  font-feature-settings: 'clig' off, 'liga' off;
+  font-weight: 500;
+  line-height: calc(3.5rem - 2px);
 }
 
 .main-button-primary {

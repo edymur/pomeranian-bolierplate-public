@@ -1,8 +1,6 @@
 import './styles.css';
 
-// variant value: primary, secondary, tertiary, text
-
-import './styles.css';
+// variant value (only text) - primary, secondary, tertiary
 
 export const Button = ({
   children,
@@ -20,3 +18,9 @@ export const Button = ({
     </button>
   );
 };
+
+export const OptionButton = ({ isSelected, onClick, children }) => (
+  <Button variant={isSelected ? 'primary' : 'secondary'} onClick={onClick}>
+    {children}
+  </Button>
+);
