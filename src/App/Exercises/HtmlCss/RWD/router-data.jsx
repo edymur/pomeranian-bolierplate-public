@@ -1,12 +1,11 @@
 import React from 'react';
-
-import { Exercise } from './index';
+import { ResponsiveWebDesign } from './index';
 
 export const blockRouterMetaData = {
-  path: 'media-queries',
+  path: 'responisve-web-design',
   date: '02-09-2023',
-  linkLabel: 'Media queries - ćwiczenia',
+  linkLabel: 'HTML & CSS - Responsive Web Design',
   blockNo: 16,
-  element: <Exercise />,
+  element: <ResponsiveWebDesign />,
   tags: ['z-index', 'positioning', 'css', 'rwd', 'media-queries'],
 };

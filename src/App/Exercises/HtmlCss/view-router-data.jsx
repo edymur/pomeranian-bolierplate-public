@@ -1,57 +1,42 @@
 import { getParsedRouterDataList } from '../../router-data/parseRouterData';
 
-import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';
-
-import { blockRouterMetaData as blockRouterMetaTextFundamentals } from './TextFundaments/router-data';
-
-import { blockRouterMetaData as CSSCascadesblockRouterMetaData } from './SelectorsAndCascade/router-data';
-
-import { blockRouterMetaData as CSSCascadesblockRouterMetaDataStandardTags } from './StandardTags/router-data';
-
-import { blockRouterMetaData as CSSCascadesblockRouterMetaDataGoogleFonts } from './GoogleFonts/router-data';
-
-import { blockRouterMetaData as CSSCascadesblockRouterMetaDataCssAnimation } from './CssAnimation/router-data';
-
-import { blockRouterMetaData as CSSCascadesblockRouterMetaDataColor } from './Color/router-data';
-
-import { blockRouterMetaData as CSSCascadesblockRouterMetaImagesFile } from './ImagesFiles/router-data';
-
-import { blockRouterMetaData as CSSCascadesblockRouterMetaBackgounds } from './Background/router-data';
-
-import { blockRouterMetaData as CSSCascadesblockRouterMetaCssFilter } from './CssFilter/router-data';
-
-import { blockRouterMetaData as CSSCascadesblockRouterMetaMediaFiles } from './MediaFiles/router-data';
-
+import { blockRouterMetaData as CSSCascadesBlockRouterMetaData } from './SelectorsAndCascade/router-data';
+import { blockRouterMetaData as blockRouterMetaDataTextFundaments } from './TextFundaments/router-data';
+import { blockRouterMetaData as blockRouterMetaDataStandardTags } from './StandardTags/router-data';
+import { blockRouterMetaData as blockRouterMetaDataGoogleFonts } from './GoogleFonts/router-data';
+import { blockRouterMetaData as blockRouterMetaDataCssAnimation } from './CssAnimation/router-data';
+import { blockRouterMetaData as blockRouterMetaDataColor } from './Color/router-data';
+import { blockRouterMetaData as blockRouterMetaDataImagesFiles } from './ImagesFiles/router-data';
+import { blockRouterMetaData as blockRouterMetaDataBackground } from './Background/router-data';
+import { blockRouterMetaData as blockRouterMetaDataCssFilter } from './CssFilter/router-data';
+import { blockRouterMetaData as blockRouterMetaDataMediaFiles } from './MediaFiles/router-data';
 import { blockRouterMetaData as blockRouterMetaDataBoxModel } from './BoxModel/router-data';
-
 import { blockRouterMetaData as blockRouterMetaDataHTMLTables } from './HTMLTables/router-data';
-
-import { blockRouterMetaData as blockRouterMetaDataTabletennis } from './TableTennis/router-data';
-
-import { blockRouterMetaData as blockRouterMetaDataArray } from './ArrayRenderToTable/router-data';
-
-import { blockRouterMetaData as blockRouterMetaDataMenu } from '../../Components/HeaderMenu/router-data';
+import { blockRouterMetaData as blockROuterMetaDataTableTennis } from './TableTennis/router-data';
+import { blockRouterMetaData as blockRouterMetaDataArrayRendering } from './ArrayRendering/router-data';
+import { blockRouterMetaData as blockRouterMetaDataArrayRenderToTable } from './ArrayRenderToTable/router-data';
+import { blockRouterMetaData as blockRouterMetaDataFloatsAndPositioning } from './FloatsAndPositioningExercise/router-data';
+import { blockRouterMetaData as blockRouterMetaDataFloatsAndPositioningExercise } from './FloatsAndPositioningExercise/router-data';
+import { blockRouterMetaData as blockRouterMetaDataResponsiveWebDesign } from './RWD/router-data';
 
 export const blockRouterMetaData = [
-  blockRouterMetaData121220231,
-  blockRouterMetaTextFundamentals,
-  CSSCascadesblockRouterMetaData,
-  CSSCascadesblockRouterMetaDataStandardTags,
-  CSSCascadesblockRouterMetaDataGoogleFonts,
-  CSSCascadesblockRouterMetaDataCssAnimation,
-  CSSCascadesblockRouterMetaDataColor,
-  CSSCascadesblockRouterMetaImagesFile,
-  CSSCascadesblockRouterMetaBackgounds,
-  CSSCascadesblockRouterMetaCssFilter,
-  CSSCascadesblockRouterMetaMediaFiles,
+  CSSCascadesBlockRouterMetaData,
+  blockRouterMetaDataTextFundaments,
+  blockRouterMetaDataStandardTags,
+  blockRouterMetaDataGoogleFonts,
+  blockRouterMetaDataCssAnimation,
+  blockRouterMetaDataColor,
+  blockRouterMetaDataImagesFiles,
+  blockRouterMetaDataBackground,
+  blockRouterMetaDataCssFilter,
+  blockRouterMetaDataMediaFiles,
   blockRouterMetaDataBoxModel,
   blockRouterMetaDataHTMLTables,
-  blockRouterMetaDataTabletennis,
-  blockRouterMetaDataArray,
-  blockRouterMetaDataFloatsAndPositioningExercises,
+  blockROuterMetaDataTableTennis,
+  blockRouterMetaDataArrayRendering,
+  blockRouterMetaDataArrayRenderToTable,
   blockRouterMetaDataFloatsAndPositioning,
-  blockRouterMetaDataRWD,
-  blockRouterMetaDataMenu,
+  blockRouterMetaDataFloatsAndPositioningExercise,
+  blockRouterMetaDataResponsiveWebDesign,
 ];
-
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);

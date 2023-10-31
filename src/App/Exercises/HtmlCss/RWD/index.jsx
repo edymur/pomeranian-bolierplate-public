@@ -1,20 +1,18 @@
 import './styles.css';
 
-export const Exercise = () => {
+export function ResponsiveWebDesign() {
   return (
     <div>
-      <div className="div1">
+      <div className="responsive-exercise-div1">
         <span>
-          To jest div który będzie miał różne instrukcje media queries
+          To jest div który będzie miał różne instrukcje media querries.
         </span>
-
-        <p>To jest paragraph</p>
+        <p>To jest paragraf</p>
       </div>
-
-      <div className="div2">
-        To jest div który będzie miał różne instrukcje media queries dla
-        ciemnego motywu
+      <div className="responsive-exercise-div2">
+        Różne instrukcje dla ciemnego motywu
       </div>
     </div>
   );
-};
+}
+
