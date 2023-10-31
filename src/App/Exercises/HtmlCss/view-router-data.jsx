@@ -1,7 +1,9 @@
 import { getParsedRouterDataList } from '../../router-data/parseRouterData';
 
 import { blockRouterMetaData as blockRouterMetaData121220231 } from './Exercise-example-12-12-2023-1/router-data';
+
 import { blockRouterMetaData as blockRouterMetaTextFundamentals } from './TextFundaments/router-data';
+
 import { blockRouterMetaData as CSSCascadesblockRouterMetaData } from './SelectorsAndCascade/router-data';
 
 import { blockRouterMetaData as CSSCascadesblockRouterMetaDataStandardTags } from './StandardTags/router-data';
